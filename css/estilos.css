@@ -96,6 +96,29 @@ div#pie-menu{
 	transition: all 0.5s ease;
 }
 
+div#imgLogo{
+	float: left;
+	height: 100%;
+	margin-left: 6px;
+	width: 40%;
+}
+
+div#imgLogo img{
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+}
+
+div#imgLogo img:hover{
+	content: url('../img/smile2.png');
+
+}
+
+div#imgLogo p{
+	float: left;
+}
+
+
 div.img-icon-pie{
 	float: left;
 	height: 90%;

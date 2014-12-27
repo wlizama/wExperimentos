@@ -3,6 +3,7 @@
 $(document).ready(initEventos);
 
 
+
 function initEventos(){
 
 	$("#img-flecha").click(mostrarMenu);
