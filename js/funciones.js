@@ -84,8 +84,8 @@ function muestraOpcionesMenu(){
 
 	}
 	else{
-		// $(menu_select).children("ul").css("display", "none");
-		$(menu_select).children("ul").css("height", "0px;");
+		$(menu_select).children("ul").css("display", "none");
+		// $(menu_select).children("ul").css("height", "0px;");
 
 		$(m_select_img).css({
 			"-ms-transform": "rotate(0deg)",
