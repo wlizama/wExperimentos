@@ -1,0 +1,13 @@
+
+.barra {
+	background: #8AD0D8;
+	border-radius: 10px;
+	border: 1px dotted #868686;
+	height: 10px;
+	width: 10px;
+	margin: 10px auto;
+}
+
+.descripcion{
+	text-align: center;
+}

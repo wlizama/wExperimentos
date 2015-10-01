@@ -1,0 +1,75 @@
+
+.container-img{
+	/*border: 1px solid red;*/
+	height: 100px;
+	margin: 0 auto;
+	text-align: center;
+
+	background: -webkit-radial-gradient(#FFFFFF, #606060); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#FFFFFF, #606060); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#FFFFFF, #606060); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#FFFFFF, #606060); /* Standard syntax (must be last) */
+}
+
+.container-conf{
+	margin: 10px auto;
+	text-align: center;
+	/*border: 1px solid red;*/
+}
+
+.label-container-conf{
+	color: #379DB0;
+	font-style: italic;
+	font-weight: bold;	
+}
+
+.elemento-container-conf{
+	margin-left: 20px;
+	display: inline-block;
+}
+
+.elemento-container-conf select{
+	border-width: 0 1px 1px 0;
+	border-color: #000000;
+	outline: none;
+}
+
+.update{
+	border-radius: 3px;
+	border: 1px solid #A6A6A6;
+	display: inline-block;
+	height: 16px;
+	padding: 2px;
+	vertical-align: top;
+	width: 16px;
+	cursor: pointer;
+
+	background: -webkit-radial-gradient(#FFFFFF, #D4D4D4); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#FFFFFF, #D4D4D4); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#FFFFFF, #D4D4D4); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#FFFFFF, #D4D4D4); /* Standard syntax (must be last) */
+}
+
+.update:hover{
+	background: -webkit-radial-gradient(#FFFFFF, #B6B6B6); /* Safari 5.1 to 6.0 */
+	background: -o-radial-gradient(#FFFFFF, #B6B6B6); /* For Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(#FFFFFF, #B6B6B6); /* For Firefox 3.6 to 15 */
+	background: radial-gradient(#FFFFFF, #B6B6B6); /* Standard syntax (must be last) */
+}
+
+/*#imagen {
+	display: inline-block;
+    background: url(../img/black-zero-sprite.png) -552px -17px;
+    height: 75px;
+    vertical-align: top;
+    width: 43px;
+    border: 1px solid blue;
+}*/
+
+#imagen{
+	/*background: url(../img/black-zero-sprite.png) 0 -10px;*/
+	display: inline-block;
+	/*height: 75px;*/
+    vertical-align: top;
+    /*width: 6px;*/
+}

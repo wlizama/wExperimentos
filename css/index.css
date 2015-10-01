@@ -1,0 +1,138 @@
+/*** CSS Index****/
+
+.contenedor-principal{
+	max-width: 1000px;
+	margin: 0 auto;
+	background: white;
+	height: 100%;
+}
+
+.cabecera{
+	background: #535353;
+	height: 2em;
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 1.5em;
+	line-height: 2em;
+
+	-webkit-box-shadow: 5px 8px 12px -8px #7B7B7B;
+	   -moz-box-shadow: 5px 8px 12px -8px #7B7B7B;
+		    box-shadow: 5px 8px 12px -8px #7B7B7B;
+}
+
+.cuerpo{
+	/*border-left: 2px solid #A0A0A0;
+	border-right: 2px solid #A0A0A0;*/
+
+	/*border-bottom: 2px solid #A0A0A0;*/
+	/*border-radius: 0 0 0.2em 0.2em;*/
+	overflow: hidden;
+	/*bottom: 0;*/
+}
+
+.item-link-cabecera{
+	overflow: hidden;
+	/*border: 1px solid red;*/
+	border-bottom: 2px solid #7C7C7C;
+}
+
+.item-link-cuerpo{
+	background: white;
+	display: none;
+	height: auto;
+	border-radius: 0 0 0.2em 0.2em;
+	padding: 0.5em;
+}
+
+.item-link{
+	max-width: 900px;
+	/*background: #F48660;*/
+	background: #FA7B4F;
+	border: 2px solid #7C7C7C;
+	border-radius: 0.4em;
+	margin: 1em auto;
+	/*cursor: pointer;*/
+
+	-webkit-box-shadow: 5px 8px 12px -8px #7B7B7B;
+	   -moz-box-shadow: 5px 8px 12px -8px #7B7B7B;
+		    box-shadow: 5px 8px 12px -8px #7B7B7B;
+}
+
+.icono-item, .titulo-item{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.icono-item{
+	width: 2em;
+	color: #646464;
+	font-size: 1.5em;
+	text-align: center;
+	cursor: pointer;
+	border-right: 2px solid #7C7C7C;
+}
+
+.icono-item span, .titulo-item span{
+	height: 1.5em;
+	line-height: 1.5em;
+}
+
+.titulo-item{
+	color: white;
+	font-weight: bold;
+	font-size: 1.2em;
+	/*max-width: 10em;*/
+	/*margin: 0.5em;*/
+	/*border: 1px solid red;*/
+}
+
+.link-page{
+	text-align: right;
+	width: 100%;
+}
+
+.link-page span{
+	height: 1.5em;
+	line-height: 1.5em;
+	vertical-align: middle;
+	font-size: 1.2em;
+	margin-right: 0.3em; 
+	cursor: pointer;
+	color: #7C7C7C;
+	/*border: 1px solid red;*/
+}
+
+.icono-item:hover, .link-page span:hover{
+	color: #464647;
+}
+
+
+iframe{
+	width: 100%;
+	overflow: auto;
+	/*height: auto;*/
+	/*border: 1px solid red;*/
+}
+
+
+@media screen and (max-width: 480px){
+
+	/** Temporalmente **/
+	.item-link, .item-link-cuerpo{
+		/*border-radius: 0;*/
+	}
+
+	.icono-item, .titulo-item{
+		display: block;
+	}
+
+	.icono-item{
+		border-bottom: 2px solid #7C7C7C;
+	}
+
+	.titulo-item{
+		padding: 0.5em;
+	}
+
+}
