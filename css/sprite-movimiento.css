@@ -5,10 +5,13 @@
 	margin: 0 auto;
 	text-align: center;
 
-	background: -webkit-radial-gradient(#FFFFFF, #606060); /* Safari 5.1 to 6.0 */
-    background: -o-radial-gradient(#FFFFFF, #606060); /* For Opera 11.6 to 12.0 */
-    background: -moz-radial-gradient(#FFFFFF, #606060); /* For Firefox 3.6 to 15 */
-    background: radial-gradient(#FFFFFF, #606060); /* Standard syntax (must be last) */
+	background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #606060 100%); /* ff3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffffff), color-stop(100%, #606060)); /* safari4+,chrome */
+	background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #606060 100%); /* safari5.1+,chrome10+ */
+	background: -o-radial-gradient(center, ellipse cover, #ffffff 0%, #606060 100%); /* opera 11.10+ */
+	background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%, #606060 100%); /* ie10+ */
+	background: radial-gradient(ellipse at center, #ffffff 0%, #606060 100%); /* w3c */
+	filter:     progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#606060',GradientType=1 ); /* ie6-9 */
 }
 
 .container-conf{
