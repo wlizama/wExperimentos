@@ -1,3 +1,9 @@
+
+@font-face{
+	font-family: "Play";
+	src: url(../fonts/Play/Play-Regular.ttf);
+}
+
 *{
 	-webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -32,4 +38,13 @@ html, body{
 a:link, a:visited, a:hover, a:active {
 	text-decoration: none;
 	color: #000000;
+}
+
+::-moz-selection { /* Code for Firefox */
+    background: rgba(73,134,231, 0.8);
+    color: white;
+}
+::selection {
+    background: rgba(73,134,231, 0.8);
+    color: white;
 }

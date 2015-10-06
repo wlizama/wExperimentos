@@ -12,9 +12,12 @@
 	height: 2em;
 	text-align: center;
 	color: #FFFFFF;
+	font-family: "Play";
 	font-weight: bold;
 	font-size: 1.5em;
 	line-height: 2em;
+
+	text-shadow: 0px 1px 4px #B7B7B7;
 
 	-webkit-box-shadow: 5px 8px 12px -8px #7B7B7B;
 	   -moz-box-shadow: 5px 8px 12px -8px #7B7B7B;
@@ -82,6 +85,7 @@
 	color: white;
 	font-weight: bold;
 	font-size: 1.2em;
+	font-family: "Play";
 	/*max-width: 10em;*/
 	/*margin: 0.5em;*/
 	/*border: 1px solid red;*/
