@@ -1,9 +1,10 @@
 
-$(document).ready(function() {
-
+$(window).load(function() {
 	setVelocidad();
 	$("#cboVelocidad").on("change",setVelocidad);
 	$("#btnUpdate").click(setVelocidad);
+
+	$(".loading-contenido").hide();
 });
 
 function setBG_Imagen(){

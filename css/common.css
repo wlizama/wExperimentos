@@ -48,3 +48,17 @@ a:link, a:visited, a:hover, a:active {
     background: rgba(73,134,231, 0.8);
     color: white;
 }
+
+.loading-contenido{
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 99999;
+	/*display: none;*/
+	background: rgba(255, 255, 255, 0.4);
+	background-image: url(../img/loader.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+}

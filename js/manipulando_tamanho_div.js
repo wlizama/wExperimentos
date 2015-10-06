@@ -1,9 +1,10 @@
 
-$(document).ready(function() {
+$(window).load(function() {
 	// Event Listeners
 	$("html").on("keyup", getKeyUp);
 	$("html").on("keydown", getKeyDown);
 	$("html").on("keypress", getKeyPress);
+	$(".loading-contenido").hide();
 });
 
 function getKeyUp (e){

@@ -1,6 +1,7 @@
 
 $(window).load(function() {
 	asignaEventos();
+	$(".loading-contenido").hide();
 });
 
 function asignaEventos (){
@@ -16,11 +17,13 @@ function muestraTrabajito (strIdCuerpoItem, strNombPag){
 	
 	// console.log("[data-cuerpo-item-id='" + strIdCuerpoItem + "']")
 	// data-link-pag="' + strNombPag + '"
+	// $(".loading-contenido").show();
 	$("[data-cuerpo-item-id='" + strIdCuerpoItem + "']")
 		.html('<div class="link-page"><a href="' + strNombPag + '" target="_blank" title="Mostrar en nueva ventana"><span class="icon-new-tab"></span></a></div>' +
 				'<iframe data-frame-id="' + strIdCuerpoItem + '" src="'+ strNombPag +'" frameborder="0">' +
 					'su navegador necesita soportar Iframes ¬_¬' +
 				'</iframe>');
+	//$(".loading-contenido").hide();
 }
 
 function toggleCuerpoItem (e){
