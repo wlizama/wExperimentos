@@ -1,9 +1,9 @@
 
 $(window).load(function() {
 	// Event Listeners
-	$("html").on("keyup", getKeyUp);
+	// $("html").on("keyup", getKeyUp);
 	$("html").on("keydown", getKeyDown);
-	$("html").on("keypress", getKeyPress);
+	// $("html").on("keypress", getKeyPress);
 	$(".loading-contenido").hide();
 });
 
