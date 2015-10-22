@@ -21,3 +21,26 @@ function getXY(e){
 	var objXY = { X: posc_x, Y: posc_y };
 	return objXY;
 }
+
+function getXY_Mobile(e){
+	console.log(e);
+	var posc_x = e.targetTouches.pageX;
+	var posc_y = e.targetTouches.pageY;
+
+	var objXY = { X: posc_x, Y: posc_y };
+	return objXY;
+}
+
+
+
+
+function isNavegadorMobile(){
+    return (
+        (navigator.userAgent.match(/Android/i)) ||
+        (navigator.userAgent.match(/webOS/i)) ||
+        (navigator.userAgent.match(/iPhone/i)) ||
+        (navigator.userAgent.match(/iPod/i)) ||
+        (navigator.userAgent.match(/iPad/i)) ||
+        (navigator.userAgent.match(/BlackBerry/))
+    );
+}

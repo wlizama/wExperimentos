@@ -1,6 +1,10 @@
 
 $(window).load(function (){
 
+	// console.log("isMobile() > ", isMobile());
+	
+	var isMobile = isNavegadorMobile();
+
 	lienzo = document.getElementById("canvasPrincipal");
 	$(lienzo).attr({
 		width: $(window).width(),
@@ -8,22 +12,65 @@ $(window).load(function (){
 	});
 	
 	canvas = lienzo.getContext("2d");
+	dibujar = false;
 
 	// setting Events
-	$(lienzo).mousemove(dibujaElemento);
+	// if(isMobile != null){
+	// 	$(lienzo).on("touchmove", getClickOnMovil);
+	// }
+	// else{
+		$(lienzo).mousedown(getClick);
+		$(lienzo).mousemove(dibujarElemento);
+		$(lienzo).mouseup(function(){
+			dibujar = false;
+		});
+	// }
+	
 	$(window).resize(function(event) {
 		$(lienzo).attr({
 			width: $(window).width(),
 			height: $(window).height()
 		});
 	});
-
+	$(".loading-contenido").hide();
 });
 
 
-function dibujaElemento(e){
+function getClick(e){
 
-	var poscisiones = getXY(e);
+	e.preventDefault();
+	// console.log(e.which);
+	if(e.which == 1){
+		dibujar = true;
+		dibujarElemento(e);
+	}
+	else{
+		dibujar = false;
+	}
+}
+
+function dibujarElemento(e){
+	e.preventDefault();
+	if(dibujar){
+		var poscisiones = getXY(e);
+		var x_posc = poscisiones.X;
+		var y_posc = poscisiones.Y;
+
+		canvas.beginPath();
+		canvas.shadowBlur = 30;
+		canvas.shadowColor = hexRandomColor();
+		canvas.arc(x_posc, y_posc, 25, 0, 2*Math.PI);
+		canvas.strokeStyle = hexRandomColor();
+		canvas.stroke();
+	}
+}
+		
+
+function getClickOnMovil(e){
+
+	// console.log(e);
+
+	var poscisiones = getXY_Mobile(e);
 
 	var x_posc = poscisiones.X;
 	var y_posc = poscisiones.Y;
@@ -32,11 +79,8 @@ function dibujaElemento(e){
 
 	canvas.shadowBlur = 30;
 	canvas.shadowColor = hexRandomColor();
-	// console.log("x_posc > ", x_posc, "/ y_posc > ", y_posc);
     canvas.arc(x_posc, y_posc, 25, 0, 2*Math.PI);
 	canvas.strokeStyle = hexRandomColor();
 	// canvas.strokeStyle = "white";
 	canvas.stroke();
 }
-
-
