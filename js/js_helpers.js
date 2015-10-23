@@ -22,18 +22,6 @@ function getXY(e){
 	return objXY;
 }
 
-function getXY_Mobile(e){
-	console.log(e);
-	var posc_x = e.targetTouches.pageX;
-	var posc_y = e.targetTouches.pageY;
-
-	var objXY = { X: posc_x, Y: posc_y };
-	return objXY;
-}
-
-
-
-
 function isNavegadorMobile(){
     return (
         (navigator.userAgent.match(/Android/i)) ||
