@@ -9,6 +9,7 @@ body
 	/*display: block;*/
 	/*border: 1px solid black;*/
 	/*text-align: center;*/
+
 }
 
 .lienzo{
@@ -18,4 +19,7 @@ body
 	/*background-image: url(../img/bg3.png);*/
 	display: block;
 	/*margin: 0 auto;*/
+	background-image: url(../img/draw-pencil.png);
+	background-repeat: no-repeat;
+	background-position: center;
 }
