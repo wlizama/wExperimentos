@@ -56,11 +56,12 @@ function dibujarElemento(e){
 		var poscisiones = getXY(e);
 		var x_posc = poscisiones.X;
 		var y_posc = poscisiones.Y;
+		var radio_circunferencia = 15;
 
 		canvas.beginPath();
 		canvas.shadowBlur = 10;
 		canvas.shadowColor = hexRandomColor();
-		canvas.arc(x_posc, y_posc, 25, 0, 2*Math.PI);
+		canvas.arc(x_posc, y_posc, radio_circunferencia, 0, 2*Math.PI);
 		canvas.strokeStyle = hexRandomColor();
 		canvas.stroke();
 	}

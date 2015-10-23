@@ -114,8 +114,8 @@
 
 iframe{
 	width: 100%;
-	overflow: auto;
-	/*height: auto;*/
+	/*overflow: hidden;*/
+	height: 100%;
 	/*border: 1px solid red;*/
 }
 
