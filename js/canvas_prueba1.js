@@ -13,7 +13,7 @@ $(window).load(function (){
 	var isMobile = isNavegadorMobile();
 
 	// setting Events
-	if(isMobile != null){
+	if(isMobile){
 		$(lienzo).on("vmousedown", getClick);
 		$(lienzo).on("vmousemove", dibujarElemento);
 		$(lienzo).on("vmouseup", function(){
