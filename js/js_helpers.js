@@ -23,6 +23,8 @@ function getXY(e){
 }
 
 function isNavegadorMobile(){
+//if(navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i))
+
     if (
         (navigator.userAgent.match(/Android/i)) ||
         (navigator.userAgent.match(/webOS/i)) ||

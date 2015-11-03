@@ -25,15 +25,13 @@
 	font-style: italic;
 	font-weight: bold;
 	margin-right: 20px;
+	font-family: "Inconsolata";
 }
 
 .elemento-container-conf{
 	/*margin-left: 20px;*/
 	display: inline-block;
-}
-
-.label-container-conf, .elemento-container-conf{
-	font-family: "Play";
+	font-family: "Inconsolata";
 }
 
 .elemento-container-conf select{

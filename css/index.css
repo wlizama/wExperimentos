@@ -1,23 +1,32 @@
 /*** CSS Index****/
 
-.contenedor-principal{
-	max-width: 1000px;
-	margin: 0 auto;
-	background: white;
+html, body{
 	height: 100%;
 }
 
+.contenedor-principal{
+	max-width: 1000px;
+	margin: 0 auto;
+	min-height: 100%;
+	background-image: url(../img/textura-line2.png);
+	border-width:  0 1px 0 1px;
+	border-color: #CCCCCC;
+	border-style: solid;
+}
+
 .cabecera{
-	background: #535353;
+	/*background: #FF6C6C;*/
+	/*background: #469ED9;*/
+	
+	background: #4879A3;
 	height: 2em;
 	text-align: center;
 	color: #FFFFFF;
-	font-family: "Play";
+	font-family: "Inconsolata";
 	font-weight: bold;
 	font-size: 1.5em;
 	line-height: 2em;
-
-	text-shadow: 0px 1px 4px #B7B7B7;
+	text-shadow: 3px 3px 7px #444;
 
 	-webkit-box-shadow: 5px 8px 12px -8px #7B7B7B;
 	   -moz-box-shadow: 5px 8px 12px -8px #7B7B7B;
@@ -36,8 +45,10 @@
 
 .item-link-cabecera{
 	overflow: hidden;
-	/*border: 1px solid red;*/
-	border-bottom: 2px solid #7C7C7C;
+	background: #767676;
+	border-radius: 0.2em 0.2em 0 0;
+	border-bottom: 2px solid #5E5C5C;
+	/*border-right: 2px solid #5E5C5C; */
 }
 
 .item-link-cuerpo{
@@ -50,12 +61,9 @@
 
 .item-link{
 	max-width: 900px;
-	/*background: #F48660;*/
-	background: #FA7B4F;
-	border: 2px solid #7C7C7C;
+	border: 2px solid #5E5C5C; 
 	border-radius: 0.4em;
 	margin: 1em auto;
-	/*cursor: pointer;*/
 
 	-webkit-box-shadow: 5px 8px 12px -8px #7B7B7B;
 	   -moz-box-shadow: 5px 8px 12px -8px #7B7B7B;
@@ -69,11 +77,13 @@
 
 .icono-item{
 	width: 2em;
-	color: #646464;
+	color: #464647;
 	font-size: 1.5em;
+	/*background: #FA7B4F;*/
 	text-align: center;
 	cursor: pointer;
-	border-right: 2px solid #7C7C7C;
+	border-right: 2px solid #5E5C5C;
+	border-bottom: 2px solid #5E5C5C;
 }
 
 .icono-item span, .titulo-item span{
@@ -85,7 +95,7 @@
 	color: white;
 	font-weight: bold;
 	font-size: 1.2em;
-	font-family: "Play";
+	font-family: "Inconsolata";
 	/*max-width: 10em;*/
 	/*margin: 0.5em;*/
 	/*border: 1px solid red;*/
@@ -108,7 +118,7 @@
 }
 
 .icono-item:hover, .link-page span:hover{
-	color: #464647;
+	color: #333333;
 }
 
 
@@ -132,7 +142,7 @@ iframe{
 	}
 
 	.icono-item{
-		border-bottom: 2px solid #7C7C7C;
+		/* border-bottom: 2px solid #464647; */
 	}
 
 	.titulo-item{
