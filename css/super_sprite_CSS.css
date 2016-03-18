@@ -1,0 +1,50 @@
+
+.rugal-animacion,
+.fondo-animacion{
+	height: 230px; /* alto = @h*/
+	margin: 0 auto;
+}
+
+.rugal-animacion{
+	
+	width: 170px; /* ancho = @w */
+	background: url(../img/rugal.png);
+
+	animation-name: rugal-movimiento;
+ 	animation-delay: 1s;
+	animation-duration: 4.5s;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+	/* fotogramas = @f */
+
+	/*animation: rugal-movimiento 1s steps(14) infinite;*/
+}
+@keyframes rugal-movimiento{
+ 	     0%{background-position: 0     0px;}  13%{background-position: -1700px     0px;}
+	13.001%{background-position: 0  -230px;}  26%{background-position: -1700px  -230px;}
+	26.001%{background-position: 0  -460px;}  39%{background-position: -1700px  -460px;}
+	39.001%{background-position: 0  -690px;}  52%{background-position: -1700px  -690px;}
+	52.001%{background-position: 0  -920px;}  65%{background-position: -1700px  -920px;}
+	65.001%{background-position: 0 -1150px;}  78%{background-position: -1700px -1150px;}
+	78.001%{background-position: 0 -1380px;}  91%{background-position: -1700px -1380px;}
+	91.001%{background-position: 0 -1610px;} 100%{background-position: -1700px -1610px;}
+
+	/* posicion_x = @w * @f  */
+}
+
+.fondo-animacion{
+	border: 1px solid red;
+	width: 325px; /* ancho = @w */
+	background: url(../img/bg-blue-power.png);
+
+	animation-name: fondo-movimiento;
+ 	animation-delay: 1s;
+	animation-duration: 0.4s;
+	animation-timing-function: steps(3);
+	animation-iteration-count: infinite;
+}
+@keyframes fondo-movimiento{
+	from{ background-position:    0   0px;}
+	  to{ background-position: -977px 0px;}
+	/* posicion_x = @w * @f  */
+}
